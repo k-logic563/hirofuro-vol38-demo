@@ -7,7 +7,7 @@ export const validatePassword = (password: string): boolean => {
   const hasLowercase = /[a-z]/.test(password);
   const hasNumber = /[0-9]/.test(password);
   const hasSymbol = /[^A-Za-z0-9]/.test(password);
-  const hasLength = password.length >= 6;
+  // const hasLength = password.length >= 6;
 
-  return hasUppercase && hasLowercase && hasNumber && hasSymbol && hasLength;
+  return hasUppercase && hasLowercase && hasNumber && hasSymbol;
 }
